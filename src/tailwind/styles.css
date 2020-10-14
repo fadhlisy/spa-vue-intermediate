@@ -1,0 +1,289 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@tailwind screens;
+
+
+.content {
+    @apply bg-gray-200 min-h-screen pt-2 font-mono
+}
+
+.content-body {
+    @apply mx-auto mt-4
+}
+
+.editor {
+    @apply w-full p-6 mx-auto
+}
+
+.editor-body {
+    @apply flex flex-wrap -mx-5 mb-6
+}
+
+.editor-setting, .editor-preview {
+    @apply w-full border-gray-400 overflow-x-hidden
+}
+
+.form-setting {
+    @apply mt-6 border-gray-400
+}
+
+.form-label {
+    @apply block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2
+}
+
+.input-form {
+    @apply appearance-none block w-full bg-white text-gray-700 border border-gray-400 shadow-inner rounded-md py-3 px-4 leading-tight
+}
+
+.input-form:focus {
+    @apply outline-none border-gray-500
+}
+
+.text-form {
+    @apply bg-gray-100 text-gray-700 rounded-md leading-normal resize-none w-full h-40 py-2 px-3 shadow-inner border border-gray-400 font-medium
+}
+
+.text-form:focus {
+    @apply outline-none bg-white
+}
+
+.form-dropdown {
+    @apply flex-shrink w-full inline-block relative
+}
+
+.form-select {
+    @apply block appearance-none text-gray-600 w-full bg-white border border-gray-400 shadow-inner px-4 py-2 pr-8 rounded
+}
+
+.form-dropdown-icon {
+    @apply pointer-events-none absolute top-0 mt-3  right-0 flex items-center px-2 text-gray-600
+}
+
+.form-row {
+    @apply flex items-center justify-between mt-4
+}
+
+.form-col {
+    @apply w-full px-3 mb-6
+}
+
+.form-block {
+    @apply w-full px-3 mb-6
+}
+
+.form-option {
+    @apply flex justify-start ml-3
+}
+
+.preview-result {
+    @apply w-full px-3 mt-6 mb-6
+}
+
+.btn-option {
+    @apply appearance-none bg-gray-200 text-gray-900 px-2 py-1 shadow-sm border border-gray-400 rounded-md mr-3
+}
+
+.collection {
+    @apply border-t mt-6 pt-6 pb-8
+}
+
+.collection-title {
+    @apply -mx-3
+}
+
+.collection-filter {
+    @apply relative inline-flex ml-5
+}
+
+.collection-list {
+    @apply flex flex-row flex-wrap mx-auto mt-4
+}
+
+.select-editor {
+    @apply block appearance-none text-gray-600 w-full bg-white border border-gray-400 shadow-inner px-4 py-2 pr-8 rounded
+}
+
+.select-collection {
+    @apply border border-gray-300 rounded-full text-gray-600 h-10 pl-5 pr-10 bg-white appearance-none
+}
+
+.select-collection:focus {
+    @apply outline-none
+}
+
+.select-collection:hover {
+    @apply border-gray-400
+}
+
+.header {
+    @apply w-full flex items-center bg-gray-800 p-3 flex-wrap
+}
+
+.title-text {
+    @apply text-xl text-white font-bold uppercase tracking-wide
+}
+
+.title-link {
+    @apply p-2 mr-4 inline-flex items-center
+}
+
+.btn-menu {
+    @apply text-white inline-flex p-2 rounded ml-auto outline-none my-1
+}
+
+.btn-menu:hover {
+    @apply bg-gray-900 text-white
+}
+
+.nav-menu {
+    @apply hidden w-full
+}
+
+.nav-list {
+    @apply w-full items-end justify-end
+}
+
+.title-editor {
+    @apply text-2xl text-gray-900 -mx-4
+}
+
+.title-collection {
+    @apply text-2xl text-gray-900 ml-5 mb-2
+}
+
+.notif-container {
+    @apply fixed bottom-0 right-0
+}
+
+.notif-box {
+    @apply w-auto text-gray-800 items-center p-4
+}
+
+.notif-title {
+    @apply text-lg font-bold pb-4
+}
+
+.notif-text {
+    @apply leading-tight
+}
+
+.notif-success {
+    @apply flex bg-green-300 max-w-sm mb-4 mr-3
+}
+
+.notif-icon-success {
+    @apply w-16 bg-green-500
+}
+
+.notif-process {
+    @apply flex bg-teal-300 max-w-sm mb-4 mr-3
+}
+
+.notif-icon-process {
+    @apply w-16 bg-teal-500
+}
+
+.notif-error {
+    @apply flex bg-red-300 max-w-sm mb-4 mr-3
+}
+
+.notif-icon-error {
+    @apply w-16 bg-red-500
+}
+
+.pagination {
+    @apply flex justify-center
+}
+
+.btn-pagination {
+    @apply border border-gray-800 text-gray-800 rounded-lg font-bold py-2 px-4 mr-2 flex items-center
+}
+
+.btn-pagination:hover {
+    @apply bg-gray-800 text-white
+}
+
+.code-list {
+    @apply w-full h-64 overflow-x-hidden rounded-lg
+}
+
+.code-preview {
+    @apply w-full bg-white mt-12 rounded-md
+}
+
+.code-collection {
+    @apply relative transition-all duration-150 flex w-full px-4 py-6
+}
+
+.btn-delete {
+    @apply absolute bottom-0 right-0 mb-12 mr-6 appearance-none bg-red-600 text-white px-2 py-1 shadow-sm rounded-md
+}
+
+.icon-title {
+    @apply fill-current text-white h-8 w-8 mr-2
+}
+
+.icon-menu {
+    @apply fill-current text-white h-8 w-8
+}
+
+.icon-dropdown-form {
+    @apply fill-current h-4 w-4
+}
+
+.icon-dropdown-filter {
+    @apply w-2 h-2 absolute top-0 right-0 m-4 pointer-events-none
+}
+
+.icon-pagination {
+    @apply h-5 w-5 mr-2 fill-current
+}
+
+.icon-notif {
+    @apply h-8 w-8 text-white fill-current m-4
+}
+
+.user-login {
+    @apply flex w-auto
+}
+
+.user-login .input-login {
+    @apply flex w-full px-3 py-2 rounded-l-lg text-gray-900
+}
+
+.user-login .btn-login {
+    @apply inline-flex w-auto px-3 py-2 mr-4 rounded-r-lg bg-gray-900 text-white
+}
+
+.user-login .btn-signup {
+    @apply inline-flex w-auto px-3 py-2 rounded-lg bg-gray-900 text-white
+}
+
+.user-signup {
+    @apply flex w-auto
+}
+
+.user-signup .input-signup {
+    @apply flex w-full px-3 py-2 rounded-l-lg text-gray-900
+}
+
+.user-signup .btn-login {
+    @apply inline-flex w-auto px-3 py-2 mr-4 rounded-lg bg-gray-900 text-white
+}
+
+.user-signup .btn-signup {
+    @apply inline-flex w-auto px-3 py-2 rounded-r-lg bg-gray-900 text-white
+}
+
+.user-dashboard {
+    @apply flex w-auto justify-end
+}
+
+.user-dashboard .user-greet {
+    @apply px-2 my-auto text-white
+}
+
+.user-dashboard .btn-logout {
+    @apply inline-flex w-auto px-3 py-2 ml-4 rounded-lg bg-gray-900 text-white
+}
